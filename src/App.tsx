@@ -37,7 +37,7 @@ function App() {
         <h1>MEME WORLD</h1>
         {items.map(item => (
           <div className="card" key={item.id} onClick={() => {
-            window.location.href = `${item.url}, "_blank"`;
+            window.open(`${item.url}`, "_blank");
           }}>
             <img src={item.url} alt="Meme" />
             <h4><b>{item.name}</b></h4>
